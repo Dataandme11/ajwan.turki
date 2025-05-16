@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ajwan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <button id="lang-toggle" class="lang-float-btn">AR</button>
+    <div class="container">
+      <h1 class="logo">Ajwan</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <button id="lang-toggle" class="lang-float-btn">AR</button>
+
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-text">
+      <h2>Hello, I'm <span>Ajwan</span></h2>
+      <p>Data Analyst & AI Enthusiast</p>
+      <a href="#about" class="btn">Explore My Work</a>
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="about" class="section" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+      I'm Ajwan Turki, a data science student with a deep curiosity for artificial intelligence, machine learning, and data-driven storytelling. I love transforming complex datasets into insights and building smart solutions. I'm also a creative writer at Awontech Charity, crafting content that inspires and empowers. I'm passionate, detail-oriented, and always learning to shape the future with data and creativity.
+    </p>
+  </section>
+
+  <hr />
+
+  <section id="skills" class="section" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li><li>R</li><li>SQL</li><li>Machine Learning</li><li>Deep Learning</li>
+      <li>Data Analysis</li><li>Pandas & NumPy</li><li>Tableau</li><li>Power BI</li><li>Data Visualization</li><li>Statistics</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <section id="projects" class="section" data-aos="fade-left">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Designing This Website</h3>
+        <p>Built and designed this bilingual, responsive portfolio website using HTML, CSS, and JavaScript. Includes animations, chatbot interaction, and language toggling.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="certificates" class="section" data-aos="fade-up">
+    <h2>Certificates</h2>
+    <div class="cert-grid">
+      <div class="cert-card"><h3>SDAIA</h3><p>Artificial Intelligent Concepts and Advanced Application</p></div>
+      <div class="cert-card"><h3>IBM</h3><p>Data Fundamentals</p></div>
+      <div class="cert-card"><h3>DeepLearning.AI</h3><p>Neural Networks and Deep Learning</p></div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="experience" class="section" data-aos="fade-up">
+    <h2>Experience</h2>
+    <ul>
+      <li>Creative Writer at Awontech Charity – Developed meaningful content aligned with the organization’s goals.</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ajwan1alturki@gmail.com">ajwan1alturki@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ajwan-a-turki-926253295" target="_blank">Visit My LinkedIn</a></p>
+
+    <div class="contact-form">
+      <h3>Write Me a Message</h3>
+      <form action="https://formsubmit.co/ajwan1alturki@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ajwan Turki. All rights reserved.</p>
+  </footer>
+
+  <!-- Chatbot -->
+  <button id="chatbot-btn" title="Ask Me">💬</button>
+  <div id="chatbot-box" class="hidden">
+    <div id="chatbot-content">
+      <p>How can I help you?</p>
+      <button onclick="chatbotAnswer('projects')">Show me your projects</button>
+      <button onclick="chatbotAnswer('contact')">I want to contact you</button>
+      <button onclick="chatbotAnswer('cv')">Download your CV</button>
+      <div id="chatbot-reply"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="chatbot.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

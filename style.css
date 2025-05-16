@@ -1,0 +1,296 @@
+:root {
+  --main-color: #0077b6;
+  --light-bg: #f4f7fa;
+  --text-color: #002147;
+  --light-gray: #ddeaf2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: var(--light-bg);
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--text-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--main-color);
+}
+
+/* زر اللغة */
+.lang-float-btn {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 5%;
+  background-color: #eaf2f8;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero-text span {
+  color: var(--main-color);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #005f87;
+}
+
+/* Sections */
+.section {
+  padding: 80px 5%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background-color: var(--light-gray);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: var(--light-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Certificates */
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cert-card {
+  background-color: var(--light-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cert-card h3 {
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  height: 150px;
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background-color: var(--light-bg);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Chatbot */
+#chatbot-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 16px;
+  font-size: 20px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#chatbot-box {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 260px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+#chatbot-box.hidden {
+  display: none;
+}
+
+#chatbot-content button {
+  margin-top: 10px;
+  background-color: var(--light-gray);
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+#chatbot-reply {
+  margin-top: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .section {
+    padding: 60px 4%;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+
+  .cert-card,
+  .project-card {
+    width: 100%;
+  }
+
+  footer {
+    padding: 30px 10px;
+    font-size: 0.8rem;
+  }
+}

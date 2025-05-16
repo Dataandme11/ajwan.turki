@@ -9,8 +9,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+  <button class="lang-float-btn" id="lang-toggle">AR</button>
+
   <header>
-    <button id="lang-toggle" class="lang-float-btn">AR</button>
     <div class="container">
       <h1 class="logo">Ajwan</h1>
       <nav>
@@ -26,8 +27,6 @@
     </div>
   </header>
 
-  <button id="lang-toggle" class="lang-float-btn">AR</button>
-
   <section class="hero" data-aos="fade-up">
     <div class="hero-text">
       <h2>Hello, I'm <span>Ajwan</span></h2>
@@ -40,9 +39,7 @@
 
   <section id="about" class="section" data-aos="fade-right">
     <h2>About Me</h2>
-    <p>
-      I'm Ajwan Turki, a data science student with a deep curiosity for artificial intelligence, machine learning, and data-driven storytelling. I love transforming complex datasets into insights and building smart solutions. I'm also a creative writer at Awontech Charity, crafting content that inspires and empowers. I'm passionate, detail-oriented, and always learning to shape the future with data and creativity.
-    </p>
+    <p>I'm Ajwan Turki, a data science student with a deep curiosity for artificial intelligence, machine learning, and data-driven storytelling. I love transforming complex datasets into insights and building smart solutions. I'm also a creative writer at Awontech Charity, crafting content that inspires and empowers. I'm passionate, detail-oriented, and always learning to shape the future with data and creativity.</p>
   </section>
 
   <hr />
@@ -93,12 +90,11 @@
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:ajwan1alturki@gmail.com">ajwan1alturki@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/ajwan-a-turki-926253295" target="_blank">Visit My LinkedIn</a></p>
-
     <div class="contact-form">
       <h3>Write Me a Message</h3>
       <form action="https://formsubmit.co/ajwan1alturki@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
         <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
         <button type="submit" class="btn">Send</button>
       </form>
     </div>
@@ -108,7 +104,6 @@
     <p>&copy; 2025 Ajwan Turki. All rights reserved.</p>
   </footer>
 
-  <!-- Chatbot -->
   <button id="chatbot-btn" title="Ask Me">💬</button>
   <div id="chatbot-box" class="hidden">
     <div id="chatbot-content">

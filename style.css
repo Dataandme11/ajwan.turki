@@ -1,3 +1,4 @@
+/* ROOT COLORS */
 :root {
   --main-color: #0077b6;
   --light-bg: #f4f7fa;
@@ -5,6 +6,7 @@
   --light-gray: #ddeaf2;
 }
 
+/* BASE STYLES */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -14,7 +16,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Header */
+/* HEADER */
 header {
   background-color: var(--light-bg);
   padding: 20px 0;
@@ -39,11 +41,14 @@ header {
   color: var(--text-color);
 }
 
+/* NAVIGATION */
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
   padding: 0;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -57,7 +62,7 @@ nav a:hover {
   color: var(--main-color);
 }
 
-/* زر اللغة */
+/* LANGUAGE BUTTON */
 .lang-float-btn {
   position: fixed;
   top: 30px;
@@ -72,7 +77,7 @@ nav a:hover {
   z-index: 999;
 }
 
-/* Hero Section */
+/* HERO */
 .hero {
   text-align: center;
   padding: 100px 5%;
@@ -109,7 +114,7 @@ nav a:hover {
   background-color: #005f87;
 }
 
-/* Sections */
+/* SECTIONS */
 .section {
   padding: 80px 5%;
   max-width: 1000px;
@@ -122,7 +127,7 @@ nav a:hover {
   color: var(--text-color);
 }
 
-/* Skills */
+/* SKILLS */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +142,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* Projects */
+/* PROJECTS */
 .projects {
   display: flex;
   flex-direction: column;
@@ -157,7 +162,7 @@ nav a:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Certificates */
+/* CERTIFICATES */
 .cert-grid {
   display: flex;
   flex-wrap: wrap;
@@ -183,7 +188,7 @@ nav a:hover {
   color: var(--main-color);
 }
 
-/* Contact Form */
+/* CONTACT */
 .contact-form {
   margin-top: 30px;
 }
@@ -199,7 +204,7 @@ nav a:hover {
   resize: vertical;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background-color: var(--light-bg);
   text-align: center;
@@ -209,7 +214,7 @@ footer {
   color: #666;
 }
 
-/* Chatbot */
+/* CHATBOT */
 #chatbot-btn {
   position: fixed;
   bottom: 30px;
@@ -258,26 +263,22 @@ footer {
   font-weight: 500;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
   nav ul {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-left: 0;
-  }
-
-  .section {
-    padding: 60px 4%;
+    gap: 15px;
   }
 
   .hero-text h2 {
     font-size: 2rem;
+  }
+
+  .section {
+    padding: 50px 4%;
   }
 
   .skills-list {
@@ -290,7 +291,7 @@ footer {
   }
 
   footer {
-    padding: 30px 10px;
+    padding: 20px 10px;
     font-size: 0.8rem;
   }
 }
